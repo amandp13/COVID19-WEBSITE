@@ -1,0 +1,284 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sen", sans-serif;
+}
+
+@media screen and (max-width: 1000px)
+ {
+  .w3-container, .w3-tag,w3-xxlarge{
+    padding: 0.00em ;
+  }
+  .marq{
+    
+    font-size: 11px;
+  }
+.glitch,u{
+  left: 18px;
+  font-size: 25px;
+ }
+.glitch:before{   
+
+  font-size: 25px;
+
+}
+.glitch:after{ 
+ 
+  font-size: 25px;
+
+ }
+}
+.glitch {
+  color: skyblue;
+  font-size: 50px;
+  position: relative;
+  width: 680px;
+  margin: 0 auto;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(90px, 9999px, 78px, 0);
+  }
+  5% {
+    clip: rect(8px, 9999px, 16px, 0);
+  }
+  10% {
+    clip: rect(64px, 9999px, 22px, 0);
+  }
+  15% {
+    clip: rect(41px, 9999px, 24px, 0);
+  }
+  20% {
+    clip: rect(33px, 9999px, 10px, 0);
+  }
+  25% {
+    clip: rect(24px, 9999px, 43px, 0);
+  }
+  30% {
+    clip: rect(29px, 9999px, 59px, 0);
+  }
+  35% {
+    clip: rect(19px, 9999px, 59px, 0);
+  }
+  40% {
+    clip: rect(43px, 9999px, 17px, 0);
+  }
+  45% {
+    clip: rect(10px, 9999px, 47px, 0);
+  }
+  50% {
+    clip: rect(37px, 9999px, 63px, 0);
+  }
+  55% {
+    clip: rect(77px, 9999px, 22px, 0);
+  }
+  60% {
+    clip: rect(69px, 9999px, 99px, 0);
+  }
+  65% {
+    clip: rect(47px, 9999px, 1px, 0);
+  }
+  70% {
+    clip: rect(69px, 9999px, 82px, 0);
+  }
+  75% {
+    clip: rect(70px, 9999px, 53px, 0);
+  }
+  80% {
+    clip: rect(6px, 9999px, 53px, 0);
+  }
+  85% {
+    clip: rect(3px, 9999px, 25px, 0);
+  }
+  90% {
+    clip: rect(44px, 9999px, 41px, 0);
+  }
+  95% {
+    clip: rect(17px, 9999px, 10px, 0);
+  }
+  100% {
+    clip: rect(17px, 9999px, 8px, 0);
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 rgb(255, 251, 2);
+  top: 0;
+  /* color: white;
+  background: #1abc9c; */
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(2px, 9999px, 51px, 0);
+  }
+  5% {
+    clip: rect(81px, 9999px, 64px, 0);
+  }
+  10% {
+    clip: rect(74px, 9999px, 66px, 0);
+  }
+  15% {
+    clip: rect(60px, 9999px, 42px, 0);
+  }
+  20% {
+    clip: rect(43px, 9999px, 5px, 0);
+  }
+  25% {
+    clip: rect(90px, 9999px, 62px, 0);
+  }
+  30% {
+    clip: rect(10px, 9999px, 96px, 0);
+  }
+  35% {
+    clip: rect(44px, 9999px, 89px, 0);
+  }
+  40% {
+    clip: rect(19px, 9999px, 94px, 0);
+  }
+  45% {
+    clip: rect(27px, 9999px, 99px, 0);
+  }
+  50% {
+    clip: rect(41px, 9999px, 19px, 0);
+  }
+  55% {
+    clip: rect(23px, 9999px, 7px, 0);
+  }
+  60% {
+    clip: rect(30px, 9999px, 48px, 0);
+  }
+  65% {
+    clip: rect(31px, 9999px, 79px, 0);
+  }
+  70% {
+    clip: rect(75px, 9999px, 99px, 0);
+  }
+  75% {
+    clip: rect(75px, 9999px, 60px, 0);
+  }
+  80% {
+    clip: rect(47px, 9999px, 34px, 0);
+  }
+  85% {
+    clip: rect(19px, 9999px, 12px, 0);
+  }
+  90% {
+    clip: rect(63px, 9999px, 39px, 0);
+  }
+  95% {
+    clip: rect(83px, 9999px, 17px, 0);
+  }
+  100% {
+    clip: rect(55px, 9999px, 44px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  /* color: white;
+  background: #1abc9c; */
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+body {
+
+  background: url("https://images.unsplash.com/photo-1585493930977-9a223261b76f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1098&q=80" ) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+ 
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  padding-top: 580px;
+}
+
+.text {
+  color: rgb(5, 7, 5);
+  font-size: 40px;
+  transition: 10s all;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+p {
+  text-align: center;
+  font-size: 17px;
+}
+
+.spaced {
+  letter-spacing: 20px;
+}
+
+.icons i {
+ 
+  color: rgb(10, 0, 153);
+}
+
+.icons i:hover {
+  color: rgb(255, 230, 0);
+}
+
+.icons {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.icons .advice {
+  margin: 1rem;
+  transition: 0.5s all;
+  text-align: center;
+  animation: anim 2s forwards;
+}
+.icons .advice .fas {
+  font-size: 50px;
+  animation: anim 2s forwards;
+}
+
+@keyframes anim {
+  to {
+    padding: 16px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .spaced {
+    letter-spacing: 8px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
